@@ -17,7 +17,7 @@ import (
 	"github.com/google/gopacket/pcap"
 )
 
-var allowedExtensions = []string{"jpg", "jpeg", "gif", "png", "bmp", "txt", "pdf", "doc", "docx", "xls", "xlsx", "ppt", "pptx"}
+var allowedExtensions = []string{"exe", "zip", "rar", "bat", "cmd", "jar", "ps1", "jpg", "jpeg", "gif", "png", "bmp", "txt", "pdf", "doc", "docx", "xls", "xlsx", "ppt", "pptx"}
 
 func proxyHandler(packet gopacket.Packet, client *http.Client) {
 	tcpLayer := packet.Layer(layers.LayerTypeTCP)
